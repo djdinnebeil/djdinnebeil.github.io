@@ -6,12 +6,13 @@ ul {
 
 body {
     text-align: center;
-    background-color: darkcyan;
+    background-color: darkslategray;
 }
 
 a {
     padding: 10px;
     align-self: center;
+    text-decoration: none;
 }
 #amatol-game {
     display: flex;
@@ -76,7 +77,7 @@ a {
 }
 
 #outer-projects, #outer-web-applications {
-    background-color: lightblue;
+    background-color: lightgray;
     padding: 10px;
     border-radius: 25px;
 }
