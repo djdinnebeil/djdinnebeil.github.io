@@ -1,0 +1,14 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+}
+
+#amatol-image {
+    max-width: 100%;
+    max-height: 100%;
+}
