@@ -6,9 +6,86 @@ ul {
 
 body {
     text-align: center;
+    background-color: darkcyan;
 }
 
+a {
+    padding: 10px;
+    align-self: center;
+}
+#amatol-game {
+    display: flex;
+    flex-direction: column;
+
+}
 #amatol-image {
+    width: 500px;
+    height: 400px;
+    align-self: center;
+}
+
+#brain-films {
+    display: flex;
+    flex-direction: column;
+}
+
+#brainfilms-image {
+    width: 350px;
+    height: 400px;
+    align-self: center;
+}
+
+#greenwich-tea-burning-image {
+    width: 500px;
+    height: 400px;
+    align-self: center;
+}
+
+#greenwich-tea-party {
+    display: flex;
+    flex-direction: column;
+}
+
+#PyTunes-image {
+    width: 900px;
+    height: 400px;
+    align-self: center;
+}
+
+#the-declarationist-image  {
+    width: 400px;
+    height: 400px;
+    align-self: center;
+
+}
+#assignment-organizer-image {
+    width: 600px;
+    height: 400px;
+    align-self: center;
     max-width: 100%;
-    max-height: 100%;
+}
+#PyTunes, #TheDeclarationist, #AssignmentOrganizer{
+    display: flex;
+    flex-direction: column;
+}
+
+#web-applications, #projects {
+    display: flex;
+    justify-content: center;
+
+}
+
+#outer-projects, #outer-web-applications {
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+h2 {
+    color: bisque;
+    background-color: darkgoldenrod;
+    max-width: 100%;
+    display: inline-block;
+    padding: 5px;
+    border-style: groove;
 }
