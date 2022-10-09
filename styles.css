@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategray;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+#welcome-box-outer {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    width: 1400px;
+    background-color: darkblue;
+}
+
+#welcome-box-first-inner {
+    padding: 20px;
+    border: 2px solid blue;
+    background-color: ghostwhite;
+}
+
+h1 {
+    text-align: center;
+}
+
+#amatol-game-box {
+    border: 2px solid black;
+    padding: 5px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    background-color: whitesmoke;
+}
+
+#amatol-image {
+    width: 600px;
+    height: 500px;
+}
+
+#brainfilms-image{
+    width: 600px;
+    height: 500px;
+}
+
+#brain-films-box {
+    border: 2px solid black;
+    padding: 5px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    background-color: whitesmoke;
+}
+
+#greenwich-tea-party-box {
+    border: 2px solid black;
+    padding: 5px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    background-color: whitesmoke;
+}
+
+#greenwich-tea-burning-image{
+    width: 600px;
+    height: 500px;
+}
+#PyTunes-box {
+    border: 2px solid black;
+    padding: 5px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: whitesmoke;
+}
+
+#PyTunes-image {
+    width: 1200px;
+
+}
+
+#the-declarationist-box {
+    border: 2px solid black;
+    padding: 5px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    background-color: whitesmoke;
+}
+
+#the-declarationist-image{
+    width: 600px;
+    height: 500px;
+}
+
+#assignment-organizer-box {
+    border: 2px solid black;
+    padding: 5px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    background-color: whitesmoke;
+}
+
+#assignment-organizer-image{
+    width: 600px;
+    height: 500px;
+}
