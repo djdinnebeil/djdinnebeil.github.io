@@ -3,11 +3,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: darkslategray;
+    background-color: #4C5762;
 }
 
 a {
     text-decoration: none;
+    color: #0A60FF;
 }
 
 #welcome-box-outer {
@@ -21,11 +22,23 @@ a {
 #welcome-box-first-inner {
     padding: 20px;
     border: 2px solid blue;
-    background-color: ghostwhite;
+    background-color: lightcyan;
 }
 
+#header-1-background-color {
+    display: flex;
+    justify-content:center;
+    text-align: left;
+
+}
 h1 {
-    text-align: center;
+
+    color: #164576;
+    background-color: whitesmoke;
+    padding: 15px;
+    border: 2px solid blue;
+    border-radius: 20px;
+
 }
 
 #amatol-game-box {
@@ -43,9 +56,8 @@ h1 {
     height: 500px;
 }
 
-#brainfilms-image{
-    width: 600px;
-    height: 500px;
+#amatol-text {
+    margin: 10px;
 }
 
 #brain-films-box {
@@ -56,6 +68,18 @@ h1 {
     flex-direction: row;
     margin: 10px;
     background-color: whitesmoke;
+}
+#brainfilms-image{
+    width: 600px;
+    height: 500px;
+}
+
+#brain-films-text {
+    margin: 10px;
+}
+#brain-films-text > a {
+
+    color: #007EA0;
 }
 
 #greenwich-tea-party-box {
@@ -72,6 +96,14 @@ h1 {
     width: 600px;
     height: 500px;
 }
+
+#greenwich-tea-party-text {
+    margin: 10px;
+}
+
+#greenwich-tea-party-text > a {
+    color: #BA661D;
+}
 #PyTunes-box {
     border: 2px solid black;
     padding: 5px;
@@ -86,6 +118,34 @@ h1 {
     width: 1200px;
 
 }
+
+
+
+#PyTunes-text > a {
+    color: dimgray;
+
+}
+
+#PyTunes-text {
+    display: flex;
+    justify-content:center;
+    text-align: left;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*text-align: center;*/
+}
+
+#PyTunes-header {
+    text-align: center;
+}
+
+#PyTunes-text > ul {
+    display: inline-block;
+    text-align: left;
+    margin: auto;
+}
+
+
 
 #the-declarationist-box {
     border: 2px solid black;
@@ -102,6 +162,14 @@ h1 {
     height: 500px;
 }
 
+#the-declarationist-text {
+    width: 600px;
+    margin: 10px;
+}
+
+#the-declarationist-text > a {
+    color: #222299;
+}
 #assignment-organizer-box {
     border: 2px solid black;
     padding: 5px;
@@ -115,4 +183,16 @@ h1 {
 #assignment-organizer-image{
     width: 600px;
     height: 500px;
+}
+
+#assignment-organizer-text {
+    margin: 15px;
+}
+
+#assignment-organizer-text > a {
+    color: forestgreen;
+}
+
+h3 {
+    text-decoration: underline;
 }
