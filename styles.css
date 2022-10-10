@@ -8,7 +8,6 @@ body {
 
 a {
     text-decoration: none;
-    color: #0A60FF;
 }
 
 #welcome-box-outer {
@@ -16,7 +15,7 @@ a {
     padding: 10px;
     border: 2px solid black;
     width: 1400px;
-    background-color: darkblue;
+    background-color: black;
 }
 
 #welcome-box-first-inner {
@@ -52,34 +51,18 @@ h1 {
 }
 
 #amatol-image {
-    width: 600px;
-    height: 500px;
+    width: 500px;
+    height: 400px;
 }
 
 #amatol-text {
-    margin: 10px;
+    margin: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-#brain-films-box {
-    border: 2px solid black;
-    padding: 5px;
-    width: 1200px;
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    background-color: whitesmoke;
-}
-#brainfilms-image{
-    width: 600px;
-    height: 500px;
-}
-
-#brain-films-text {
-    margin: 10px;
-}
-#brain-films-text > a {
-
-    color: #007EA0;
+#amatol-text > a {
+    color: #0A60FF;
 }
 
 #greenwich-tea-party-box {
@@ -93,17 +76,46 @@ h1 {
 }
 
 #greenwich-tea-burning-image{
-    width: 600px;
-    height: 500px;
+    width: 500px;
+    height: 400px;
 }
 
 #greenwich-tea-party-text {
-    margin: 10px;
+    margin: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #greenwich-tea-party-text > a {
     color: #BA661D;
 }
+
+#brain-films-box {
+    border: 2px solid black;
+    padding: 5px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    background-color: whitesmoke;
+}
+#brainfilms-image{
+    width: 500px;
+    height: 400px;
+}
+
+#brain-films-text {
+    margin: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#brain-films-text > a {
+
+    color: #007EA0;
+}
+
+
 #PyTunes-box {
     border: 2px solid black;
     padding: 5px;
@@ -158,13 +170,15 @@ h1 {
 }
 
 #the-declarationist-image{
-    width: 600px;
-    height: 500px;
+    width: 500px;
+    height: 400px;
 }
 
 #the-declarationist-text {
     width: 600px;
     margin: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #the-declarationist-text > a {
@@ -181,18 +195,45 @@ h1 {
 }
 
 #assignment-organizer-image{
-    width: 600px;
-    height: 500px;
+    width: 500px;
+    height: 400px;
 }
 
 #assignment-organizer-text {
-    margin: 15px;
+    margin: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+
 }
 
 #assignment-organizer-text > a {
-    color: forestgreen;
+    color: green;
 }
 
 h3 {
     text-decoration: underline;
+}
+
+#contact-me-outer {
+    margin: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 300px;
+    border: 2px solid bisque;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50px;
+}
+
+#contact-me-inner {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+#contact-me-inner > a {
+    color: darkslategray;
 }
