@@ -1,0 +1,83 @@
+#start-image {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#welcome-message {
+    text-align: center;
+    color: green;
+}
+
+#links {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+    background-color: black;
+    padding: 5px;
+
+}
+
+a:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+
+}
+
+#display-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.italics {
+    font-style: italic;
+}
+
+p {
+    width: 500px;
+    margin-left: 30%;
+}
+
+h1 {
+    color: green;
+}
+
+h2 {
+    color: blue;
+
+}
+h3 {
+    color: green;
+    margin-left: 42%;
+}
+h4 {
+    color: silver;
+    margin-left: 2%;
+}
+
+body {
+    background-color: black;
+}
+
+.albums {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.certifications {
+    text-color: green;
+}
