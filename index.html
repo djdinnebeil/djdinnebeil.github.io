@@ -1,165 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>DJ Dinnebeil</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ Dinnebeil - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>    
-    <h1>Under Construction</h1>
-<div id="welcome-box-outer">
-    <div id="welcome-box-first-inner">
-        <div id="welcome-box-second-inner">
-            <div id="header-1-background-color"><h1>&nbsp;DJ Dinnebeil&nbsp;</h1></div>
-            <div style="color: cadetblue; margin: 5px; margin-bottom: 0px; background-color: midnightblue; border: 2px solid blue; border-radius: 20px;">
-            <h3 style="color: cadetblue; padding: 10px; padding-bottom: 0px; background-color: midnightblue;">&nbsp;About me&nbsp;</h3>
-                <div style="padding-left: 20px; padding-top: 0px; padding-bottom: 10px;">
-                 I completed a computer science degree from Stockton University during the Summer 2022 semester.
-                 I have an interest in Python software development and programming language concepts.
-                 I also have an interest in philosophy, South Jersey history, and United States studies, particularly declarationism.
-                </div></div>
-        </div>
+<body>
+  <header>
+    <div class="container">
+      <h1>DJ Dinnebeil</h1>
+      <h1>(Page Under Construction)</h1>
     </div>
-</div>
-<div id="projects-outer">
-    <div id="amatol-game-box">
-        <div>
-            <a href="https://amatolgame.github.io">
-                <img alt="Screenshot of Start Screen" id="amatol-image" src="amatolgame_start_screen.jpg">
-            </a>
-        </div>
-        <div id="amatol-text">
-            <a href="https://amatolgame.github.io">
-                <h3>The Amatol Game</h3>
-                <div class="blue">Programmer/Designer</div>
-                <ul>
-                    <li>Designed a browser-based history education game that allows the player to explore the ghost town of Amatol, NJ</li>
-                    <li>Coded with HTML for structure and content, CSS for presentation and format, and JavaScript for behavior and interactivity</li>
-                </ul>
-                <div class="blue">Researcher/Writer</div>
-                <ul>
-                    <li>Reviewed and summarized primary and secondary sources about the development and history of Amatol, NJ</li>
-                    <li>Synthesized research into an article on Amatol that was published in SoJourn, a journal dedicated to South Jersey history</li>
-                </ul><br><br></a></div>
-    </div>
-    <div id="greenwich-tea-party-box">
-        <div id="greenwich-tea-party-text">
-            <a href="https://greenwich-tea-burning.000webhostapp.com/">
-                <h3>The Greenwich Tea Burning Party</h3>
-                <div class="blue">Programmer</div>
-                <ul>
-                    <li>Created a website that features textual sources and an interactive quiz on the 1774 tea party that took place in Greenwich, NJ</li>
-                    <li>Coded with a mixture of PHP and Javascript</li>
-                </ul>
-                <div class="blue">Researcher/Writer</div>
-                <ul>
-                    <li>Reviewed and summarized primary and secondary sources about South Jersey’s tea party</li>
-                    <li>Synthesized research into an article for publication in SoJourn</li>
+  </header>
 
-                </ul><br><br><br><br></a>
-        </div>
-        <div>
-            <a href="https://greenwich-tea-burning.000webhostapp.com/">
-                <img alt="Screenshot of Greenwich Tea Party welcome screen" id="greenwich-tea-burning-image" src="greenwich_tea_burning_start_screen.jpg">
-            </a>
-        </div>
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello, I am DJ. I’m a software engineer with a strong interest in Python, Windows development, and the foundational concepts of programming languages. When I’m not coding, I enjoy hiking, discovering new trails, and spending time with my cat, Tabby, who keeps me company during late-night projects.</p>
     </div>
-    <div id="brain-films-box">
-        <div>
-            <a href="https://djdinnebeil.pythonanywhere.com">
-                <img alt="Screenshot of Brain Films add video screen" id="brainfilms-image" src="brainfilms_add_video_screen.jpg">
-            </a>
-        </div>
-        <div id="brain-films-text">
-            <a href="https://djdinnebeil.pythonanywhere.com">
-                <h3>BrainFilms</h3>
-                <div class="blue">Programmer</div>
-                <ul>
-                    <li>Developed a search engine for educational and instructional videos that allows users to rate the content</li>
-                    <li>Users can add new videos that are reviewed and categorized by admin</li>
-                    <li>Coded with a mixture of Python, Javascript, and MySQL</li>
-                </ul>
-                Developer / Tester
-                <ul>
-                    <li>Thoroughly conducted system, unit, acceptance, and functional/performance testing</li>
-                    <li>Created test cases to simulate real-time settings</li>
-                </ul><br><br><br></a></div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div><strong>Languages:</strong> Python, JavaScript, C++, C, HTML5, CSS, PHP, SQL</div>
+        <div><strong>Technologies:</strong> Flask, Jinja2, Node.js, React, Redux, Vite, Express, SQLite3, PostgreSQL</div>
+        <div><strong>Knowledge:</strong> Agile Development, Neural Networks (CNNs, RNNs), Operating Systems, Data Science</div>
+      </div>
     </div>
-    <div id="PyTunes-box">
-        <div>
-            <a href="https://github.com/djdinnebeil/PyTunes">
-                <img id="PyTunes-image" alt="Screenshot of PyTunes" src="PyTunes_screenshot.jpg">
-            </a>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="images/soundshift-player.png" alt="SoundShift Player screenshot">
+        <div class="project-details">
+          <h3>SoundShift Player</h3>
+          <p>A music player designed as a tool to develop custom extensions for Spotify. Designed for a seamless and personalized music experience.</p>
+          <h4>Key Features:</h4>
+          <ul>
+            <li>Tracks user listening history.</li>
+            <li>Prevents songs from being played too frequently.</li>
+            <li>User-friendly interface with playlist support.</li>
+            <li>Integration-ready with APIs like Spotify for future scalability.</li>
+          </ul>
+          <p><strong>Tech Stack:</strong> Python, Flask, Jinja2, PostgreSQL</p>
         </div>
-        <div id="PyTunes-text">
-            <a href="https://github.com/djdinnebeil/PyTunes">
-                <h3 id="PyTunes-header">PyTunes</h3>
-                <div class="blue">Programmer</div>
-                <ul>
-                    <li>Developed a media player written entirely in pure Python using the GUI framework Tkinter</li>
-                    <li>Added innovative metrics to measure the user’s listening patterns</li>
-                </ul>
-                Analyst / Tester
-                <ul>
-                    <li>Performed manual and automatic testing to determine the best path for optimization </li>
-                </ul>
-            </a>
+      </div>
+      <div class="project">
+
+        <img src="project-image.jpg" alt="SoundShift Player screenshot" >
+        <h3>SnapList</h3>
+
+        <div class="project-details">
+          <h3>SnapList</h3>
+          <p>An online marketplace where users can sell gifts they don’t need and purchase items posted by others. Simplifies the process of finding new homes for unused items.</p>
+          <h4>Key Features:</h4>
+          <ul>
+            <li>User account system for posting and purchasing items.</li>
+            <li>Search and filter functionality for browsing listings.</li>
+            <li>Intuitive interface for listing items with images and descriptions.</li>
+            <li>Secure transaction system.</li>
+            <li>Community-oriented with user reviews and ratings.</li>
+
+          </ul>
+          <p><strong>Tech Stack:</strong>Python, Flask, React, Redux, Vite, PostgreSQL</p>
         </div>
+      </div>
+      <div class="project">
+        <img src="project-image.jpg" alt="PlaceFinder screenshot">
+        <div class="project-details">
+          <h3>PlaceFinder</h3>
+          <p>A platform for discovering and booking rental properties. PlaceFinder makes it easy to find and book the perfect place.</p>
+          <h4>Key Features:</h4>
+          <ul>
+            <li>Advanced search and filtering for rental properties.</li>
+            <li>User profiles for managing bookings and listings.</li>
+            <li>Booking and availability management system.</li>
+            <li>Map integration for location-based searches.</li>
+            <li>Reviews and ratings for transparency.</li>
+          </ul>
+          <p><strong>Tech Stack:</strong> Node.js, React, Redux, Vite, PostgreSQL</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="project-image.jpg" alt="Auto Core screenshot">
+        <div class="project-details">
+          <h3>Auto Core</h3>
+          <p>A utility designed to streamline task execution on Windows 11 systems.</p>
+          <h4>Key Features:</h4>
+          <ul>
+            <li>Customizable key mapping for specific actions.</li>
+            <li>Lightweight and efficient system resource usage.</li>
+            <li>Seamless integration with Windows 11.</li>
+            <li>User-friendly configuration options.</li>
+          </ul>
+          <p><strong>Tech Stack:</strong> C++, Python, Windows API</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="project-image.jpg" alt="The Amatol Game screenshot">
+        <div class="project-details">
+          <h3>The Amatol Game</h3>
+          <p>A web-based history education game about the World War I ghost town of Amatol, NJ.</p>
+          <h4>Key Features:</h4>
+          <ul>
+            <li>Engaging storyline centered on historical events.</li>
+            <li>Interactive challenges.</li>
+            <li>Visually appealing graphics and animations.</li>
+            <li>Suitable for all ages, with a focus on historical accuracy.</li>
+          </ul>
+          <p><strong>Tech Stack:</strong> JavaScript, HTML5, CSS</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="project-image.jpg" alt="1774: Burn the Tea! screenshot">
+        <div class="project-details">
+          <h3>1774: Burn the Tea!</h3>
+          <p>An interactive and educational website that explores the 1774 Greenwich Tea Burning event. Features historical sources and a quiz to engage users in learning about this revolutionary act.</p>
+          <h4>Key Features:</h4>
+          <ul>
+            <li>Primary and secondary source materials.</li>
+            <li>Interactive quiz to test historical knowledge.</li>
+            <li>Multimedia elements, including images and maps.</li>
+            <li>Engaging narrative presentation of the historical event.</li>
+          </ul>
+          <p><strong>Tech Stack:</strong> JavaScript, HTML5, CSS</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="project-image.jpg" alt="LearningVision screenshot">
+        <div class="project-details">
+          <h3>LearningVision</h3>
+          <p>A learning-focused video search platform that allows users to perform nested searches to find the most relevant educational content.</p>
+          <h4>Key Features:</h4>
+          <ul>
+            <li>Advanced nested search functionality.</li>
+            <li>Categorization and tagging for easy browsing.</li>
+            <li>Clean and intuitive user interface.</li>
+            <li>Video playback with detailed descriptions and metadata.</li>
+          </ul>
+          <p><strong>Tech Stack:</strong> Python, Flask, Jinja2, Bootstrap</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="project-image.jpg" alt="The Declarationist screenshot">
+        <div class="project-details">
+          <h3>The Declarationist</h3>
+          <p>A Python-based graphical text adventure game that combines storytelling and interactive choices to create an engaging user experience.</p>
+          <h4>Key Features:</h4>
+          <ul>
+            <li>Rich, immersive storytelling with multiple pathways.</li>
+            <li>Graphical interface to enhance text-based gameplay.</li>
+            <li>User choice-driven narrative progression.</li>
+            <li>Simple yet engaging graphics developed in Python.</li>
+          </ul>
+          <p><strong>Tech Stack:</strong> Python, Tkinter</p>
+        </div>
+      </div>
+
+
+
     </div>
-    <div id="the-declarationist-box">
-        <div id="the-declarationist-text">
-            <a href="https://github.com/djdinnebeil/TheDeclarationist">
-                <h3>The Declarationist</h3>
-                <div class="blue">Programmer</div>
-                <ul>
-                    <li>Developed a Python text adventure game with a graphical user interface</li>
-                    <li>Implemented with event-driven programming and with save/load features</li>
-                </ul>
-                Tester
-                <ul>
-                    <li>Performed path testing to ensure that all paths are viable</li>
-                </ul>
-            <br><br><br><br>
-            </a>
-        </div>
-        <div>
-            <a href="https://github.com/djdinnebeil/TheDeclarationist">
-                <img src="the_declarationist_start_screen.jpg" alt="Start screen of The Declarationist" id="the-declarationist-image">
-            </a>
-        </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p><strong>Email:</strong> <a href="mailto:djdinnebeil@gmail.com">djdinnebeil@gmail.com</a></p>
     </div>
-    <div id="assignment-organizer-box">
-        <div>
-            <a href="https://github.com/djdinnebeil/AssignmentOrganizer">
-                <img src="assignment_organizer_screenshot.jpg" alt="Screenshot of Assignment Organizer" id="assignment-organizer-image">
-            </a>
-        </div>
-        <div id="assignment-organizer-text">
-            <a href="https://github.com/djdinnebeil/AssignmentOrganizer">
-                <h3>Assignment Organizer</h3>
-                <div class="blue">Programmer</div>
-                <ul>
-                    <li>Developed a Java graphical user interface application that organizes assignments by course and due dates</li>
-                    <li>Implemented with a combo box for data validation and with file input/output operations</li>
-                </ul>
-                Tester
-                <ul>
-                    <li>Created automatic test scripts to verify stability and usability of the application</li>
-                </ul>
-                <br><br><br>
-            </a>
-        </div>
-            <h2>Other Projects:<br><a href='calculator.html'>A JavaScript calcuator</a></h2>
-    <h2><a href='nirvana.html'>A webpage dedicated to Nirvana in the 90s</a></h2>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 DJ Dinnebeil. All Rights Reserved.</p>
     </div>
-</div>
-<div id="contact-me-outer">
-    <div id="contact-me-inner">
-        <a href="mailto:djdinnebeil@gmail.com">
-        <h3>Contact me</h3>
-         djdinnebeil@gmail.com</a>
-        <br><br>
-    </div>
-</div>
+  </footer>
 </body>
 </html>
