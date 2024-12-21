@@ -3,186 +3,218 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DJ Dinnebeil - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/projects.css">
+  <link rel="stylesheet" href="styles/contact.css">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <title>DJ's Portfolio</title>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>DJ Dinnebeil</h1>
-      <h1>(Page Under Construction)</h1>
+  <header class="site-header">
+    <div class="header-container">
+      <h1 class="site-title" id="portfolio-title">DJ Dinnebeil</h1>
+      <nav class="site-navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="dj_dinnebeil_resume.pdf" target="_blank" class="nav-link">Resume</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
-
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Hello, I am DJ. I’m a software engineer with a strong interest in Python, Windows development, and the foundational concepts of programming languages. When I’m not coding, I enjoy hiking, discovering new trails, and spending time with my cat, Tabby, who keeps me company during late-night projects.</p>
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <h2 class="section-title">About Me</h2>
+      <hr class="about-hr">
+      <p class="about-description">
+        Hello, I am DJ. I’m a software engineer with a strong interest in Python, Windows development, and the foundational concepts of programming languages. When I’m not coding, I enjoy hiking, discovering new trails, and spending time with my cat, Tabby, who keeps me company during late-night projects.
+      </p>
     </div>
   </section>
 
-  <section id="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div><strong>Languages:</strong> Python, JavaScript, C++, C, HTML5, CSS, PHP, SQL</div>
-        <div><strong>Technologies:</strong> Flask, Jinja2, Node.js, React, Redux, Vite, Express, SQLite3, PostgreSQL</div>
-        <div><strong>Knowledge:</strong> Agile Development, Neural Networks (CNNs, RNNs), Operating Systems, Data Science</div>
-      </div>
-    </div>
-  </section>
+  <section id="projects" class="projects-section">
+    <h2 class="project-section-title">Projects</h2>
+    <hr style="max-width: 1500px;">
+    <div class="projects-container">
 
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project">
-        <img src="images/soundshift-player.png" alt="SoundShift Player screenshot">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="images/soundshift-player.png" alt="SoundShift Player" class="project-image">
         <div class="project-details">
-          <h3>SoundShift Player</h3>
-          <p>A music player designed as a tool to develop custom extensions for Spotify. Designed for a seamless and personalized music experience.</p>
-          <h4>Key Features:</h4>
-          <ul>
+          <h3 class="project-title">SoundShift Player</h3>
+          <p class="project-description">A music player designed as a tool to develop custom extensions for Spotify. Designed for a seamless and personalized music experience.</p>
+          <p class="project-tech-stack"><strong>Tech Stack:</strong> Python, Flask, Jinja2, PostgreSQL</p>
+          <ul class="project-features">
             <li>Tracks user listening history.</li>
             <li>Prevents songs from being played too frequently.</li>
             <li>User-friendly interface with playlist support.</li>
             <li>Integration-ready with APIs like Spotify for future scalability.</li>
           </ul>
-          <p><strong>Tech Stack:</strong> Python, Flask, Jinja2, PostgreSQL</p>
+          <div class="project-buttons">
+            <a href="https://github.com/djdinnebeil/soundshift-player" target="_blank">Repository</a>
+            <a href="https://soundshift-player.onrender.com/" target="_blank">Live Demo</a>
+          </div>
         </div>
       </div>
-      <div class="project">
 
-        <img src="project-image.jpg" alt="SoundShift Player screenshot" >
-        <h3>SnapList</h3>
-
+      <!-- Project 7 -->
+      <div class="project-card">
+        <img src="images/learning-vision.png" alt="LearningVision" class="project-image">
         <div class="project-details">
-          <h3>SnapList</h3>
-          <p>An online marketplace where users can sell gifts they don’t need and purchase items posted by others. Simplifies the process of finding new homes for unused items.</p>
-          <h4>Key Features:</h4>
-          <ul>
-            <li>User account system for posting and purchasing items.</li>
-            <li>Search and filter functionality for browsing listings.</li>
-            <li>Intuitive interface for listing items with images and descriptions.</li>
-            <li>Secure transaction system.</li>
-            <li>Community-oriented with user reviews and ratings.</li>
-
+          <h3 class="project-title">LearningVision</h3>
+          <p class="project-description">A learning-focused video search platform that allows users to perform nested searches to find the most relevant educational content.</p>
+          <p class="project-tech-stack"><strong>Tech Stack:</strong> Python, Flask, Jinja2, Bootstrap</p>
+          <ul class="project-features">
+            <li>Advanced nested search functionality.</li>
+            <li>Categorization and tagging for easy browsing.</li>
+            <li>Clean and intuitive user interface.</li>
+            <li>Video playback with detailed descriptions and metadata.</li>
           </ul>
-          <p><strong>Tech Stack:</strong>Python, Flask, React, Redux, Vite, PostgreSQL</p>
+          <div class="project-buttons">
+            <a href="https://github.com/your-repo/placefinder" target="_blank">Repository</a>
+            <a href="https://placefinder-demo.com" target="_blank">Live Demo</a>
+          </div>
         </div>
       </div>
-      <div class="project">
-        <img src="project-image.jpg" alt="PlaceFinder screenshot">
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="images/placefinder.png" alt="PlaceFinder" class="project-image">
         <div class="project-details">
-          <h3>PlaceFinder</h3>
-          <p>A platform for discovering and booking rental properties. PlaceFinder makes it easy to find and book the perfect place.</p>
-          <h4>Key Features:</h4>
-          <ul>
+          <h3 class="project-title">PlaceFinder</h3>
+          <p class="project-description">A platform for discovering and booking rental properties. PlaceFinder makes it easy to find and book the perfect place.</p>
+          <p class="project-tech-stack"><strong>Tech Stack:</strong> Node.js, React, Redux, Vite, PostgreSQL</p>
+          <ul class="project-features">
             <li>Advanced search and filtering for rental properties.</li>
             <li>User profiles for managing bookings and listings.</li>
             <li>Booking and availability management system.</li>
             <li>Map integration for location-based searches.</li>
             <li>Reviews and ratings for transparency.</li>
           </ul>
-          <p><strong>Tech Stack:</strong> Node.js, React, Redux, Vite, PostgreSQL</p>
+          <div class="project-buttons">
+            <a href="https://github.com/your-repo/placefinder" target="_blank">Repository</a>
+            <a href="https://placefinder-demo.com" target="_blank">Live Demo</a>
+          </div>
         </div>
       </div>
 
-      <div class="project">
-        <img src="project-image.jpg" alt="Auto Core screenshot">
-        <div class="project-details">
-          <h3>Auto Core</h3>
-          <p>A utility designed to streamline task execution on Windows 11 systems.</p>
-          <h4>Key Features:</h4>
-          <ul>
-            <li>Customizable key mapping for specific actions.</li>
-            <li>Lightweight and efficient system resource usage.</li>
-            <li>Seamless integration with Windows 11.</li>
-            <li>User-friendly configuration options.</li>
-          </ul>
-          <p><strong>Tech Stack:</strong> C++, Python, Windows API</p>
-        </div>
-      </div>
 
-      <div class="project">
-        <img src="project-image.jpg" alt="The Amatol Game screenshot">
+      <!-- Project 6 -->
+      <div class="project-card">
+        <img src="images/1774-burn-the-tea.png" alt="1774: Burn the Tea!" class="project-image">
         <div class="project-details">
-          <h3>The Amatol Game</h3>
-          <p>A web-based history education game about the World War I ghost town of Amatol, NJ.</p>
-          <h4>Key Features:</h4>
-          <ul>
-            <li>Engaging storyline centered on historical events.</li>
-            <li>Interactive challenges.</li>
-            <li>Visually appealing graphics and animations.</li>
-            <li>Suitable for all ages, with a focus on historical accuracy.</li>
-          </ul>
-          <p><strong>Tech Stack:</strong> JavaScript, HTML5, CSS</p>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="project-image.jpg" alt="1774: Burn the Tea! screenshot">
-        <div class="project-details">
-          <h3>1774: Burn the Tea!</h3>
-          <p>An interactive and educational website that explores the 1774 Greenwich Tea Burning event. Features historical sources and a quiz to engage users in learning about this revolutionary act.</p>
-          <h4>Key Features:</h4>
-          <ul>
+          <h3 class="project-title">1774: Burn the Tea!</h3>
+          <p class="project-description">An interactive and educational website that explores the 1774 Greenwich Tea Burning event. Features historical sources and a quiz to engage users in learning about this revolutionary act.</p>
+          <p class="project-tech-stack"><strong>Tech Stack:</strong> JavaScript, HTML5, CSS</p>
+          <ul class="project-features">
             <li>Primary and secondary source materials.</li>
             <li>Interactive quiz to test historical knowledge.</li>
             <li>Multimedia elements, including images and maps.</li>
             <li>Engaging narrative presentation of the historical event.</li>
           </ul>
-          <p><strong>Tech Stack:</strong> JavaScript, HTML5, CSS</p>
+          <div class="project-buttons">
+            <a href="https://github.com/your-repo/placefinder" target="_blank">Repository</a>
+            <a href="https://placefinder-demo.com" target="_blank">Live Demo</a>
+          </div>
         </div>
       </div>
 
-      <div class="project">
-        <img src="project-image.jpg" alt="LearningVision screenshot">
+      <!-- Project 5 -->
+      <div class="project-card">
+        <img src="images/amatol-game.png" alt="The Amatol Game" class="project-image">
         <div class="project-details">
-          <h3>LearningVision</h3>
-          <p>A learning-focused video search platform that allows users to perform nested searches to find the most relevant educational content.</p>
-          <h4>Key Features:</h4>
-          <ul>
-            <li>Advanced nested search functionality.</li>
-            <li>Categorization and tagging for easy browsing.</li>
-            <li>Clean and intuitive user interface.</li>
-            <li>Video playback with detailed descriptions and metadata.</li>
+          <h3 class="project-title">The Amatol Game</h3>
+          <p class="project-description">A web-based history education game about the World War I ghost town of Amatol, NJ.</p>
+          <p class="project-tech-stack"><strong>Tech Stack:</strong> JavaScript, HTML5, CSS</p>
+          <ul class="project-features">
+            <li>Engaging storyline centered on historical events.</li>
+            <li>Interactive challenges.</li>
+            <li>Visually appealing graphics and animations.</li>
+            <li>Suitable for all ages, with a focus on historical accuracy.</li>
           </ul>
-          <p><strong>Tech Stack:</strong> Python, Flask, Jinja2, Bootstrap</p>
+          <div class="project-buttons">
+            <a href="https://github.com/your-repo/placefinder" target="_blank">Repository</a>
+            <a href="https://placefinder-demo.com" target="_blank">Live Demo</a>
+          </div>
         </div>
       </div>
 
-      <div class="project">
-        <img src="project-image.jpg" alt="The Declarationist screenshot">
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="images/snaplist.png" alt="SnapList" class="project-image">
         <div class="project-details">
-          <h3>The Declarationist</h3>
-          <p>A Python-based graphical text adventure game that combines storytelling and interactive choices to create an engaging user experience.</p>
-          <h4>Key Features:</h4>
-          <ul>
+          <h3 class="project-title">SnapList</h3>
+          <p class="project-description">An online marketplace where users can sell gifts they don’t need and purchase items posted by others. Simplifies the process of finding new homes for unused items.</p>
+          <p class="project-tech-stack"><strong>Tech Stack:</strong> Python, Flask, React, Redux, Vite, PostgreSQL</p>
+          <ul class="project-features">
+            <li>User account system for posting and purchasing items.</li>
+            <li>Search and filter functionality for browsing listings.</li>
+            <li>Intuitive interface for listing items with images and descriptions.</li>
+            <li>Secure transaction system.</li>
+            <li>Community-oriented with user reviews and ratings.</li>
+          </ul>
+          <div class="project-buttons">
+            <a href="https://github.com/your-repo/snaplist" target="_blank">Repository</a>
+            <a href="https://snaplist-demo.com" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <img src="images/auto-core.png" alt="Auto Core" class="project-image">
+        <div class="project-details">
+          <h3 class="project-title">Auto Core</h3>
+          <p class="project-description">A platform for discovering and booking rental properties. PlaceFinder makes it easy to find and book the perfect place.</p>
+          <p class="project-tech-stack"><strong>Tech Stack:</strong> C++ | Python | Windows API</p>
+          <ul class="project-features">
+            <li>Customizable key mapping for specific actions.</li>
+            <li>Lightweight and efficient system resource usage.</li>
+            <li>Seamless integration with Windows 11.</li>
+            <li>User-friendly configuration options.</li>
+          </ul>
+          <div class="project-buttons">
+            <a href="https://github.com/your-repo/placefinder" target="_blank">Repository</a>
+            <a href="https://placefinder-demo.com" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Project 8 -->
+      <div class="project-card">
+        <img src="images/the-declarationist.png" alt="The Declarationist" class="project-image">
+        <div class="project-details">
+          <h3 class="project-title">The Declarationist</h3>
+          <p class="project-description">A Python-based graphical text adventure game that combines storytelling and interactive choices to create an engaging user experience.</p>
+          <p class="project-tech-stack"><strong>Tech Stack:</strong> Python, Tkinter</p>
+          <ul class="project-features">
             <li>Rich, immersive storytelling with multiple pathways.</li>
             <li>Graphical interface to enhance text-based gameplay.</li>
             <li>User choice-driven narrative progression.</li>
             <li>Simple yet engaging graphics developed in Python.</li>
           </ul>
-          <p><strong>Tech Stack:</strong> Python, Tkinter</p>
+          <div class="project-buttons">
+            <a href="https://github.com/your-repo/placefinder" target="_blank">Repository</a>
+            <a href="https://placefinder-demo.com" target="_blank">Live Demo</a>
+          </div>
         </div>
       </div>
 
-
-
     </div>
   </section>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p><strong>Email:</strong> <a href="mailto:djdinnebeil@gmail.com">djdinnebeil@gmail.com</a></p>
+  <section id="contact" class="section section-contact">
+    <div class="section-container">
+      <h2 class="section-title">Contact Me</h2>
+      <p class="contact-info"><strong>Email:</strong> <a href="mailto:djdinnebeil@gmail.com" class="contact-link">djdinnebeil@gmail.com</a></p>
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 DJ Dinnebeil. All Rights Reserved.</p>
-    </div>
-  </footer>
 </body>
 </html>

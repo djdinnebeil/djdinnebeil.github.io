@@ -1,0 +1,51 @@
+/* General Section Styles */
+/* Dark Theme About Section */
+.about-section {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  padding: 60px 20px;
+  text-align: left;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  /*margin: 0 auto;*/
+  color: #e0e0e0;
+}
+
+
+.about-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f5f5f5;
+  font-weight: bold;
+}
+
+.about-hr {
+  max-width: 800px;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 15px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+}
