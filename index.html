@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="styles/about.css">
   <link rel="stylesheet" href="styles/projects.css">
   <link rel="stylesheet" href="styles/contact.css">
-
+  <link rel="stylesheet" href="styles/modal.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+  <script src="scripts/modal.js" defer></script>
   <title>DJ's Portfolio</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
         <ul class="nav-list">
           <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
           <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="dj_dinnebeil_resume.pdf" target="_blank" class="nav-link">Resume</a></li>
+          <li class="nav-item"><a href="resume/dj_dinnebeil_resume.pdf" target="_blank" class="nav-link">Resume</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -46,17 +46,17 @@
         <img src="images/soundshift-player.png" alt="SoundShift Player" class="project-image">
         <div class="project-details">
           <h3 class="project-title">SoundShift Player</h3>
-          <p class="project-description">A music player designed as a tool to develop custom extensions for Spotify. Designed for a seamless and personalized music experience.</p>
+          <p class="project-description">A music player designed to develop custom Spotify extensions.</p>
           <p class="project-tech-stack"><strong>Tech Stack:</strong> Python, Flask, Jinja2, PostgreSQL</p>
           <ul class="project-features">
-            <li>Tracks user listening history.</li>
-            <li>Prevents songs from being played too frequently.</li>
-            <li>User-friendly interface with playlist support.</li>
-            <li>Integration-ready with APIs like Spotify for future scalability.</li>
+            <li>Streamlined music playback.</li>
+            <li>Upload and manage your music collection.</li>
+            <li>Track listening history for personalized insights.</li>
+            <li>Create and organize playlists effortlessly.</li>
           </ul>
           <div class="project-buttons">
             <a href="https://github.com/djdinnebeil/soundshift-player" target="_blank">Repository</a>
-            <a href="https://soundshift-player.onrender.com/" target="_blank">Live Demo</a>
+            <a href="demos/soundshift-demo.gif" target="_blank">Live Demo</a>
           </div>
         </div>
       </div>
@@ -64,19 +64,20 @@
       <!-- Project 7 -->
       <div class="project-card">
         <img src="images/learning-vision.png" alt="LearningVision" class="project-image">
+
         <div class="project-details">
           <h3 class="project-title">LearningVision</h3>
-          <p class="project-description">A learning-focused video search platform that allows users to perform nested searches to find the most relevant educational content.</p>
+          <p class="project-description">A learning-focused search platform with advanced options for finding relevant instructional content.</p>
           <p class="project-tech-stack"><strong>Tech Stack:</strong> Python, Flask, Jinja2, Bootstrap</p>
           <ul class="project-features">
             <li>Advanced nested search functionality.</li>
-            <li>Categorization and tagging for easy browsing.</li>
-            <li>Clean and intuitive user interface.</li>
-            <li>Video playback with detailed descriptions and metadata.</li>
+            <li>Categorization and tagging for efficient browsing.</li>
+            <li>Straightforward user interface.</li>
+            <li>Detailed descriptions for each tutorial.</li>
           </ul>
           <div class="project-buttons">
-            <a href="https://github.com/your-repo/placefinder" target="_blank">Repository</a>
-            <a href="https://placefinder-demo.com" target="_blank">Live Demo</a>
+            <a href="https://github.com/djdinnebeil/learningvision" target="_blank">Repository</a>
+            <a href="demos/learningvision-demo.gif" target="_blank">Live Demo</a>
           </div>
         </div>
       </div>
@@ -86,39 +87,37 @@
         <img src="images/placefinder.png" alt="PlaceFinder" class="project-image">
         <div class="project-details">
           <h3 class="project-title">PlaceFinder</h3>
-          <p class="project-description">A platform for discovering and booking rental properties. PlaceFinder makes it easy to find and book the perfect place.</p>
+          <p class="project-description">A platform for discovering and booking rental properties.</p>
           <p class="project-tech-stack"><strong>Tech Stack:</strong> Node.js, React, Redux, Vite, PostgreSQL</p>
           <ul class="project-features">
             <li>Advanced search and filtering for rental properties.</li>
-            <li>User profiles for managing bookings and listings.</li>
+            <li>User profiles to manage listings and bookings.</li>
             <li>Booking and availability management system.</li>
-            <li>Map integration for location-based searches.</li>
-            <li>Reviews and ratings for transparency.</li>
+            <li>Reviews and ratings for informed decision-making.</li>
           </ul>
           <div class="project-buttons">
-            <a href="https://github.com/your-repo/placefinder" target="_blank">Repository</a>
-            <a href="https://placefinder-demo.com" target="_blank">Live Demo</a>
+            <a href="https://github.com/djdinnebeil/placefinder" target="_blank">Repository</a>
+            <a href="demos/placefinder-demo.gif" target="_blank">Live Demo</a>
           </div>
         </div>
       </div>
-
 
       <!-- Project 6 -->
       <div class="project-card">
         <img src="images/1774-burn-the-tea.png" alt="1774: Burn the Tea!" class="project-image">
         <div class="project-details">
           <h3 class="project-title">1774: Burn the Tea!</h3>
-          <p class="project-description">An interactive and educational website that explores the 1774 Greenwich Tea Burning event. Features historical sources and a quiz to engage users in learning about this revolutionary act.</p>
+          <p class="project-description">An interactive website that explores the 1774 tea party that occurred in Greenwich, NJ where participants burnt the tea instead of dumping it.</p>
           <p class="project-tech-stack"><strong>Tech Stack:</strong> JavaScript, HTML5, CSS</p>
           <ul class="project-features">
-            <li>Primary and secondary source materials.</li>
-            <li>Interactive quiz to test historical knowledge.</li>
+            <li>Explore primary and secondary historical sources.</li>
+            <li>Take an interactive quiz to test historical knowledge.</li>
             <li>Multimedia elements, including images and maps.</li>
-            <li>Engaging narrative presentation of the historical event.</li>
+            <li>Reflect on the historical significance of this event.</li>
           </ul>
           <div class="project-buttons">
-            <a href="https://github.com/your-repo/placefinder" target="_blank">Repository</a>
-            <a href="https://placefinder-demo.com" target="_blank">Live Demo</a>
+            <a href="https://github.com/djdinnebeil/1774-burn-the-tea" target="_blank">Repository</a>
+            <a href="demos/1774-burn-the-tea-demo.gif" target="_blank">Live Demo</a>
           </div>
         </div>
       </div>
@@ -131,14 +130,14 @@
           <p class="project-description">A web-based history education game about the World War I ghost town of Amatol, NJ.</p>
           <p class="project-tech-stack"><strong>Tech Stack:</strong> JavaScript, HTML5, CSS</p>
           <ul class="project-features">
-            <li>Engaging storyline centered on historical events.</li>
-            <li>Interactive challenges.</li>
-            <li>Visually appealing graphics and animations.</li>
-            <li>Suitable for all ages, with a focus on historical accuracy.</li>
+            <li>Virtual exploration of a historic ghost town.</li>
+            <li>Interactive challenges and mini-games.</li>
+            <li>Rich narrative with historical photographs.</li>
+            <li>Engaging historical content.</li>
           </ul>
           <div class="project-buttons">
-            <a href="https://github.com/your-repo/placefinder" target="_blank">Repository</a>
-            <a href="https://placefinder-demo.com" target="_blank">Live Demo</a>
+            <a href="https://github.com/djdinnebeil/AmatolGame" target="_blank">Repository</a>
+            <a href="demos/amatolgame-demo.gif" target="_blank">Live Demo</a>
           </div>
         </div>
       </div>
@@ -148,18 +147,17 @@
         <img src="images/snaplist.png" alt="SnapList" class="project-image">
         <div class="project-details">
           <h3 class="project-title">SnapList</h3>
-          <p class="project-description">An online marketplace where users can sell gifts they don’t need and purchase items posted by others. Simplifies the process of finding new homes for unused items.</p>
+          <p class="project-description">An online marketplace to buy and sell items, often at discounted prices.</p>
           <p class="project-tech-stack"><strong>Tech Stack:</strong> Python, Flask, React, Redux, Vite, PostgreSQL</p>
           <ul class="project-features">
             <li>User account system for posting and purchasing items.</li>
-            <li>Search and filter functionality for browsing listings.</li>
+            <li>Search and filter tools for quick discovery.</li>
             <li>Intuitive interface for listing items with images and descriptions.</li>
-            <li>Secure transaction system.</li>
             <li>Community-oriented with user reviews and ratings.</li>
           </ul>
           <div class="project-buttons">
-            <a href="https://github.com/your-repo/snaplist" target="_blank">Repository</a>
-            <a href="https://snaplist-demo.com" target="_blank">Live Demo</a>
+            <a href="https://github.com/djdinnebeil/snaplist" target="_blank">Repository</a>
+            <a href="demos/snaplist-demo.gif" target="_blank">Live Demo</a>
           </div>
         </div>
       </div>
@@ -169,43 +167,40 @@
         <img src="images/auto-core.png" alt="Auto Core" class="project-image">
         <div class="project-details">
           <h3 class="project-title">Auto Core</h3>
-          <p class="project-description">A platform for discovering and booking rental properties. PlaceFinder makes it easy to find and book the perfect place.</p>
-          <p class="project-tech-stack"><strong>Tech Stack:</strong> C++ | Python | Windows API</p>
+          <p class="project-description">A utility to streamline task execution on Windows 11 systems.</p>
+          <p class="project-tech-stack"><strong>Tech Stack:</strong> C++, Windows API, SQLite3</p>
           <ul class="project-features">
-            <li>Customizable key mapping for specific actions.</li>
-            <li>Lightweight and efficient system resource usage.</li>
-            <li>Seamless integration with Windows 11.</li>
-            <li>User-friendly configuration options.</li>
+            <li>Remap numpad keys for user-defined commands.</li>
+            <li>Terminal-based input and feedback.</li>
+            <li>Lightweight with efficient resource usage.</li>
+            <li>Customizable configurations for user preferences.</li>
           </ul>
           <div class="project-buttons">
-            <a href="https://github.com/your-repo/placefinder" target="_blank">Repository</a>
-            <a href="https://placefinder-demo.com" target="_blank">Live Demo</a>
+            <a href="https://github.com/djdinnebeil/auto_core" target="_blank">Repository</a>
+            <a href="demos/auto-core-demo.gif" target="_blank">Live Demo</a>
           </div>
         </div>
       </div>
-
-
 
       <!-- Project 8 -->
       <div class="project-card">
         <img src="images/the-declarationist.png" alt="The Declarationist" class="project-image">
         <div class="project-details">
           <h3 class="project-title">The Declarationist</h3>
-          <p class="project-description">A Python-based graphical text adventure game that combines storytelling and interactive choices to create an engaging user experience.</p>
+          <p class="project-description">A graphical-based text adventure with a rich narrative.</p>
           <p class="project-tech-stack"><strong>Tech Stack:</strong> Python, Tkinter</p>
           <ul class="project-features">
-            <li>Rich, immersive storytelling with multiple pathways.</li>
+            <li>Immersive storytelling with branching paths.</li>
             <li>Graphical interface to enhance text-based gameplay.</li>
-            <li>User choice-driven narrative progression.</li>
-            <li>Simple yet engaging graphics developed in Python.</li>
+            <li>User-driven narrative progression.</li>
+            <li>Discover a special bonus ending.</li>
           </ul>
           <div class="project-buttons">
-            <a href="https://github.com/your-repo/placefinder" target="_blank">Repository</a>
-            <a href="https://placefinder-demo.com" target="_blank">Live Demo</a>
+            <a href="https://github.com/djdinnebeil/TheDeclarationist" target="_blank">Repository</a>
+            <a href="demos/declarationist-demo.gif" target="_blank">Live Demo</a>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -215,6 +210,12 @@
       <p class="contact-info"><strong>Email:</strong> <a href="mailto:djdinnebeil@gmail.com" class="contact-link">djdinnebeil@gmail.com</a></p>
     </div>
   </section>
+<div id="gif-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-modal" class="close">&times;</span>
+    <img id="modal-image" src="" alt="Project Demo" class="modal-image">
+  </div>
+</div>
 
 </body>
 </html>
