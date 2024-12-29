@@ -6,6 +6,7 @@
   text-align: center;
   border-top: 1px solid #333;
   border-bottom: 1px solid #333;
+  padding-bottom: 100px;
 }
 .contact-info {
   font-size: 1rem;
@@ -21,4 +22,15 @@
 .contact-link:hover {
   color: #5494da;
   text-decoration: underline;
+}
+
+.map-container {
+  text-align: center;
+  margin: 20px 0;
+  /*width: 500px;*/
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-around;
 }
