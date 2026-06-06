@@ -1,95 +1,76 @@
 <!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 <head>
   <title>DJ Dinnebeil's Portfolio</title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-  <link rel="stylesheet" href="assets/css/main.css"/>
-  <!--		<link rel="icon" type="image/x-icon" href="favicon.ico">-->
+  <link rel="canonical" href="<?= htmlspecialchars($baseUrl . '/', ENT_QUOTES, 'UTF-8') ?>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic&display=swap" />
+  <link rel="stylesheet" href="app/site.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <script defer src="app/app.js"></script>
   <noscript>
-    <link rel="stylesheet" href="assets/css/noscript.css"/>
+    <style>
+      body.is-preload #banner .logo,
+      body.is-preload #banner h2,
+      body.is-preload #banner p {
+        opacity: 1;
+        transform: none;
+        filter: none;
+      }
+    </style>
   </noscript>
 </head>
 <body class="is-preload">
-
-  <!-- Page Wrapper -->
   <div id="page-wrapper">
-
-    <!-- Header -->
     <header id="header" class="alt">
-      <h1 id="header-name"><a href="index.html">DJ Dinnebeil</a></h1>
-
-
+      <h1 id="header-name"><a href="/" id="back-to-top">DJ Dinnebeil</a></h1>
       <nav>
         <ul class="links">
-          <!-- <li><a href="#one">About Me</a></li>
-          <li><a href="#two">My Journey</a></li> -->
-          <!--								<li><a href="#three">Skills</a></li>-->
-          <li><a href="#four">Projects</a></li>
-          <li><a href="resume/DJ_Dinnebeil_Resume.pdf" target="_blank">Resume</a></li>
-          <li><a href="https://github.com/djdinnebeil" target="_blank">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/dj-dinnebeil" target="_blank">LinkedIn</a></li>
-          <li><a href="#footer">Contact</a></li>
-
+          <li><a href="#about" data-track-click="nav:about">About</a></li>
+          <!-- <li><a href="#night-sky" data-track-click="nav:journey">My Journey</a></li> -->
+          <li><a href="#projects" data-track-click="nav:projects">Projects</a></li>
+          <li><a href="#skills" data-track-click="nav:skills">Skills</a></li>
+          <li>
+            <a href="/resume/DJ_Dinnebeil_Resume.pdf" target="_blank" data-track-click="nav:resume">Resume</a>
+          </li>
+          <!-- <li><a href="https://github.com/djdinnebeil" target="_blank" data-track-click="contact:github">GitHub</a></li> -->
+          <!-- <li><a href="https://www.linkedin.com/in/dj-dinnebeil" target="_blank" data-track-click="contact:linkedin">LinkedIn</a></li> -->
+          <li><a href="#contact" data-track-click="nav:contact">Contact</a></li>
         </ul>
-
-        <!--							<a href="#menu">Menu</a>-->
       </nav>
     </header>
-
-    <!-- Menu -->
-    <!--					<nav id="menu">-->
-    <!--						-->
-    <!--						-->
-    <!--						<div class="inner">-->
-    <!--							<h2>Menu</h2>-->
-    <!--							<ul class="links">-->
-    <!--								<li><a href="index.html">Home</a></li>-->
-    <!--								<li><a href="generic.html">Generic</a></li>-->
-    <!--								<li><a href="elements.html">Elements</a></li>-->
-    <!--								<li><a href="#">Log In</a></li>-->
-    <!--								<li><a href="#">Sign Up</a></li>-->
-    <!--							</ul>-->
-    <!--							<a href="#" class="close">Close</a>-->
-    <!--						</div>-->
-    <!--					</nav>-->
-
-
-    <!-- Banner -->
     <section id="banner">
       <div class="inner">
-        <!--							<div class="logo"><span class="icon fa-gem"></span></div>-->
         <h2>DJ Dinnebeil</h2>
         <p>Software Engineer | Full-Stack Developer</p>
       </div>
     </section>
-
-    <!-- Wrapper -->
     <section id="wrapper">
 
-      <!-- One -->
-      <section id="one" class="wrapper spotlight style1">
+      <!-- About Me -->
+      <section id="about" class="wrapper spotlight style1">
         <div class="inner">
-          <a href="#" class="image"><img src="images/photo_self.jpg" alt=""/></a>
+          <a href="" class="image" style="cursor: default;">
+            <img src="images/photo_self.webp" alt="Portrait of self" />
+          </a>
           <div class="content">
             <h2 class="major">About Me</h2>
-            <p>Hello, I am DJ. I’m a software engineer with a strong interest in Python, Windows development, and the
-              foundational concepts of programming languages. When I’m not coding, I enjoy hiking, discovering new
-              trails, and spending time with my cat, Tabby, who keeps me company during late-night projects.</p>
-
+            <p>Hello, I am DJ. I’m a software engineer with a strong interest in backend development, programming language design, and system efficiency.
+            When I’m not coding, I enjoy hiking, discovering new trails, and spending time with my cat, Tabby, who keeps me company during late-night projects.</p>
           </div>
         </div>
       </section>
 
-      <!-- Two -->
-      <section id="two" class="wrapper alt spotlight style2">
+      <!-- My Journey -->
+      <section id="night-sky" class="wrapper alt spotlight style2">
         <div class="inner">
-          <a href="#" class="image"><img src="images/cosmic0.jpg" alt=""/></a>
+          <a href="/night-sky" class="image" style="cursor: default;">
+            <img src="images/cosmic.webp" alt="the night sky" decoding="async"/>
+          </a>
           <div class="content">
             <h2 class="major">My Journey</h2>
             <p>My journey into software engineering has been a blend of academic rigor, military discipline, and a deep
@@ -109,43 +90,35 @@
               Core, a C++ utility designed to streamline task execution by remapping the numpad keys to user-defined
               commands.</p>
             <p>Through this journey, I have developed a solid foundation in software engineering, driven by a commitment
-              to technical excellence and continuous learning. I am excited to bring this perspective to solve
-              meaningful problems and build innovative projects.</p>
-
-            <!--										<a href="#" class="special">Learn more</a>-->
+              to technical excellence and continuous learning. I see programming as more than writing code — it is a way 
+              to think critically,  solve complex problems, and create practical solutions that make systems more efficient 
+              and useful. I am excited to bring this perspective to solve meaningful problems and build innovative projects.</p>
           </div>
         </div>
       </section>
 
-      <!-- Three -->
-      <section id="three" class="wrapper spotlight style3">
-        <div class="inner">
-          <!--									<a href="#" class="image"><img src="images/tabby_reaching_for_phone.jpg" alt="" /></a>-->
-          <div class="content">
-            <h2 class="major">Skills</h2>
-            <p>Languages: Python, JavaScript, C++, C, HTML5, CSS, PHP, SQL
-              <br>Technologies: Flask, Jinja2, Node.js, React, Redux, Vite, Express, SQLite3, PostgreSQL, AWS S3
-              <br>Knowledge: Agile Development, Neural Networks (CNNs, RNNs), Operating Systems, Data Science, System
-              Design
-            </p>
-            <!--										<a href="#" class="special">Learn more</a>-->
-          </div>
-        </div>
-      </section>
-
-      <!-- Four -->
-      <section id="four" class="wrapper alt style1">
+      <!-- Projects -->
+      <section id="projects" class="wrapper alt style1">
         <div class="inner">
           <h2 class="major">My Projects</h2>
-          <p style="font-size: 1.5rem;">"Programming is not just about writing code; it’s about solving problems,
-            creating solutions, and constantly learning."</span><span style="font-style: italic; font-size: 0.9em;">–A Programmer's Adage</span>
-          </p>
-          <section class="features">
-
-                        <article>
-              <a href="https://github.com/djdinnebeil/placefinder" target="_blank" class="image"><img src="images/placefinder.png" alt="PlaceFinder screenshot"/></a>
+          <div class="project-carousel-shell">
+            <button
+              class="project-carousel-control project-carousel-control-prev"
+              type="button"
+              aria-label="Previous projects"
+              aria-controls="project-carousel"
+            ></button>
+            <section id="project-carousel" class="features project-carousel" aria-label="Project carousel" tabindex="0">
+              <article>
+              <a
+                href="https://github.com/djdinnebeil/placefinder"
+                target="_blank"
+                class="image"
+                data-track-click="github:placefinder"
+              >
+                <img class="project-image" src="images/placefinder.webp" alt="PlaceFinder screenshot" decoding="async"/>
+              </a>
               <h3 class="major">PlaceFinder</h3>
-
               <p class="project-description">A platform for discovering and booking rental properties.</p>
               <p class="project-tech-stack"><strong>Tech Stack:</strong> Node.js, React, Redux, Vite, PostgreSQL</p>
               <ul class="project-features">
@@ -155,14 +128,32 @@
                 <li>Reviews and ratings for informed decision-making.</li>
               </ul>
               <div class="project-buttons">
-                <a href="https://github.com/djdinnebeil/placefinder" target="_blank">Repository</a>
-                <a href="demos/placefinder-demo.gif" target="_blank">Preview Demo</a>
+                <a
+                  href="https://github.com/djdinnebeil/placefinder"
+                  target="_blank"
+                  data-track-click="github:placefinder"
+                >
+                  Repository
+                </a>
+                <a
+                  href="https://djdinnebeil.github.io/demos/placefinder-demo.gif"
+                  target="_blank"
+                  data-track-click="demo:placefinder"
+                >
+                  Preview Demo
+                </a>
               </div>
-              <!--											<a href="#" class="special">Learn more</a>-->
             </article>
 
             <article>
-              <a href="https://github.com/djdinnebeil/snaplist" target="_blank" class="image"><img src="images/snaplist.png" alt="SnapList screenshot"/></a>
+              <a
+                href="https://github.com/djdinnebeil/snaplist"
+                target="_blank"
+                class="image"
+                data-track-click="github:snaplist"
+              >
+                <img class="project-image" src="images/snaplist.webp" alt="SnapList screenshot" decoding="async"/>
+              </a>
               <h3 class="major">SnapList</h3>
               <p class="project-description">An online marketplace to buy and sell items, often at discounted
                 prices.</p>
@@ -174,33 +165,32 @@
                 <li>Community-oriented with user reviews and ratings.</li>
               </ul>
               <div class="project-buttons">
-                <a href="https://github.com/djdinnebeil/snaplist" target="_blank">Repository</a>
-                <a href="demos/snaplist-demo.gif" target="_blank">Preview Demo</a>
+                <a
+                  href="https://github.com/djdinnebeil/snaplist"
+                  target="_blank"
+                  data-track-click="github:snaplist"
+                >
+                  Repository
+                </a>
+                <a
+                  href="https://djdinnebeil.github.io/demos/snaplist-demo.gif"
+                  target="_blank"
+                  data-track-click="demo:snaplist"
+                >
+                  Preview Demo
+                </a>
               </div>
-
-              <!--											<a href="#" class="special">Learn more</a>-->
             </article>
 
             <article>
-              <a href="https://github.com/djdinnebeil/soundshift-player" target="_blank" class="image"><img src="images/soundshift-player.png" alt="SoundShift Player screenshot"/></a>
-              <h3 class="major">SoundShift Player</h3>
-              <p class="project-description">A music player designed to develop custom Spotify extensions.</p>
-              <p class="project-tech-stack"><strong>Tech Stack:</strong> Python, Flask, Jinja2, PostgreSQL</p>
-              <ul class="project-features">
-                <li>Streamlined music playback.</li>
-                <li>Upload and manage your music collection.</li>
-                <li>Track listening history for personalized insights.</li>
-                <li>Create and organize playlists effortlessly.</li>
-              </ul>
-              <div class="project-buttons">
-                <a href="https://github.com/djdinnebeil/soundshift-player" target="_blank">Repository</a>
-                <a href="demos/soundshift-demo.gif" target="_blank">Preview Demo</a>
-              </div>
-              <!--											<a href="#" class="special">Learn more</a>-->
-            </article>
-
-            <article>
-              <a href="https://github.com/djdinnebeil/learningvision" target="_blank" class="image"><img src="images/learning-vision.png" alt="LearningVision screenshot"/></a>
+              <a
+                href="https://github.com/djdinnebeil/learningvision"
+                target="_blank"
+                class="image"
+                data-track-click="github:learningvision"
+              >
+                <img class="project-image" src="images/learning-vision.webp" alt="LearningVision screenshot" decoding="async"/>
+              </a>
               <h3 class="major">LearningVision</h3>
               <p class="project-description">A learning-focused search platform with advanced options for finding
                 relevant instructional content.</p>
@@ -212,14 +202,68 @@
                 <li>Detailed descriptions for each tutorial.</li>
               </ul>
               <div class="project-buttons">
-                <a href="https://github.com/djdinnebeil/learningvision" target="_blank">Repository</a>
-                <a href="demos/learningvision-demo.gif" target="_blank">Preview Demo</a>
+                <a
+                  href="https://github.com/djdinnebeil/learningvision"
+                  target="_blank"
+                  data-track-click="github:learningvision"
+                >
+                  Repository
+                </a>
+                <a
+                  href="https://djdinnebeil.github.io/demos/learningvision-demo.gif"
+                  target="_blank"
+                  data-track-click="demo:learningvision"
+                >
+                  Preview Demo
+                </a>
               </div>
-              <!--											<a href="#" class="special">Learn more</a>-->
+            </article>
+            
+            <article>
+              <a
+                href="https://github.com/djdinnebeil/soundshift-player"
+                target="_blank"
+                class="image"
+                data-track-click="github:soundshift-player"
+              >
+                <img class="project-image" src="images/soundshift-player.webp" alt="SoundShift Player screenshot" decoding="async"/>
+              </a>
+              <h3 class="major">SoundShift Player</h3>
+              <p class="project-description">A music player designed to develop custom Spotify extensions.</p>
+              <p class="project-tech-stack"><strong>Tech Stack:</strong> Python, Flask, Jinja2, PostgreSQL</p>
+              <ul class="project-features">
+                <li>Streamlined music playback.</li>
+                <li>Upload and manage your music collection.</li>
+                <li>Track listening history for personalized insights.</li>
+                <li>Create and organize playlists effortlessly.</li>
+              </ul>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/djdinnebeil/soundshift-player"
+                  target="_blank"
+                  data-track-click="github:soundshift-player"
+                >
+                  Repository
+                </a>
+                <a
+                  href="https://djdinnebeil.github.io/demos/soundshift-demo.gif"
+                  target="_blank"
+                  data-track-click="demo:soundshift-player"
+                >
+                  Preview Demo
+                </a>
+              </div>
             </article>
 
             <article>
-              <a href="https://github.com/djdinnebeil/AmatolGame" target="_blank" class="image"><img src="images/amatol-game.png" alt="The Amatol Game screenshot"/></a>
+              <a
+                href="https://github.com/djdinnebeil/AmatolGame"
+                target="_blank"
+                class="image"
+                data-track-click="github:amatolgame"
+              >
+                <img class="project-image" src="images/amatol-game.webp" alt="The Amatol Game screenshot" decoding="async"/>
+              </a>
               <h3 class="major">The Amatol Game</h3>
               <p class="project-description">A web-based history education game about the World War I ghost town of
                 Amatol, NJ.</p>
@@ -231,20 +275,35 @@
                 <li>Engaging historical content.</li>
               </ul>
               <div class="project-buttons">
-                <a href="https://github.com/djdinnebeil/AmatolGame" target="_blank">Repository</a>
-                <a href="demos/amatolgame-demo.gif" target="_blank">Preview Demo</a>
+                <a
+                  href="https://github.com/djdinnebeil/AmatolGame"
+                  target="_blank"
+                  data-track-click="github:amatolgame"
+                >
+                  Repository
+                </a>
+                <a
+                  href="https://djdinnebeil.github.io/demos/amatolgame-demo.gif"
+                  target="_blank"
+                  data-track-click="demo:amatolgame"
+                >
+                  Preview Demo
+                </a>
               </div>
-
-
-              <!--											<a href="#" class="special">Learn more</a>-->
             </article>
 
             <article>
-              <a href="https://github.com/djdinnebeil/1774-burn-the-tea" target="_blank" class="image"><img src="images/1774-burn-the-tea.png"
-                                             alt="1774: Burn the Tea screenshot"/></a>
+              <a
+                href="https://github.com/djdinnebeil/1774-burn-the-tea"
+                target="_blank"
+                class="image"
+                data-track-click="github:1774-burn-the-tea"
+              >
+                <img class="project-image" src="images/1774-burn-the-tea.webp" alt="1774: Burn the Tea screenshot" decoding="async"/>
+              </a>
               <h3 class="major">The Greenwich Tea Burning</h3>
               <p class="project-description">An interactive website that explores the 1774 tea party that occurred in
-                Greenwich, NJ where participants burnt the tea instead of dumping it.</p>
+                Greenwich, NJ.</p>
               <p class="project-tech-stack"><strong>Tech Stack:</strong> JavaScript, HTML5, CSS</p>
               <ul class="project-features">
                 <li>Explore primary and secondary historical sources.</li>
@@ -253,15 +312,32 @@
                 <li>Reflect on the historical significance of this event.</li>
               </ul>
               <div class="project-buttons">
-                <a href="https://github.com/djdinnebeil/1774-burn-the-tea" target="_blank">Repository</a>
-                <a href="demos/1774-burn-the-tea-demo.gif" target="_blank">Preview Demo</a>
+                <a
+                  href="https://github.com/djdinnebeil/1774-burn-the-tea"
+                  target="_blank"
+                  data-track-click="github:1774-burn-the-tea"
+                >
+                  Repository
+                </a>
+                <a
+                  href="https://djdinnebeil.github.io/demos/1774-burn-the-tea-demo.gif"
+                  target="_blank"
+                  data-track-click="demo:1774-burn-the-tea"
+                >
+                  Preview Demo
+                </a>
               </div>
-
-              <!--											<a href="#" class="special">Learn more</a>-->
             </article>
 
             <article>
-              <a href="https://github.com/djdinnebeil/auto_core" target="_blank" class="image"><img src="images/auto-core.png" alt="Auto Core screenshot"/></a>
+              <a
+                href="https://github.com/djdinnebeil/autocore"
+                target="_blank"
+                class="image"
+                data-track-click="github:autocore"
+              >
+                <img class="project-image" src="images/auto-core.webp" alt="Auto Core screenshot" decoding="async"/>
+              </a>
               <h3 class="major">Auto Core</h3>
               <p class="project-description">A utility to streamline task execution on Windows 11 systems.</p>
               <p class="project-tech-stack"><strong>Tech Stack:</strong> C++, Windows API, SQLite3</p>
@@ -272,16 +348,32 @@
                 <li>Customizable configurations for user preferences.</li>
               </ul>
               <div class="project-buttons">
-                <a href="https://github.com/djdinnebeil/auto_core" target="_blank">Repository</a>
-                <a href="demos/auto-core-demo.gif" target="_blank">Preview Demo</a>
+                <a
+                  href="https://github.com/djdinnebeil/autocore"
+                  target="_blank"
+                  data-track-click="github:autocore"
+                >
+                  Repository
+                </a>
+                <a
+                  href="https://djdinnebeil.github.io/demos/auto-core-demo.gif"
+                  target="_blank"
+                  data-track-click="demo:autocore"
+                >
+                  Preview Demo
+                </a>
               </div>
-
-              <!--											<a href="#" class="special">Learn more</a>-->
             </article>
 
             <article>
-              <a href="https://github.com/djdinnebeil/TheDeclarationist" target="_blank" class="image"><img src="images/the-declarationist.png"
-                                             alt="The Declarationist screenshot"/></a>
+              <a
+                href="https://github.com/djdinnebeil/TheDeclarationist"
+                target="_blank"
+                class="image"
+                data-track-click="github:the-declarationist"
+              >
+                <img class="project-image" src="images/the-declarationist.webp" alt="The Declarationist screenshot" decoding="async"/>
+              </a>
               <h3 class="major">The Declarationist</h3>
               <p class="project-description">A graphical-based text adventure with a rich narrative.</p>
               <p class="project-tech-stack"><strong>Tech Stack:</strong> Python, Tkinter</p>
@@ -292,82 +384,128 @@
                 <li>Discover a special bonus ending.</li>
               </ul>
               <div class="project-buttons">
-                <a href="https://github.com/djdinnebeil/TheDeclarationist" target="_blank">Repository</a>
-                <a href="demos/declarationist-demo.gif" target="_blank">Preview Demo</a>
+                <a
+                  href="https://github.com/djdinnebeil/TheDeclarationist"
+                  target="_blank"
+                  data-track-click="github:the-declarationist"
+                >
+                  Repository
+                </a>
+                <a
+                  href="https://djdinnebeil.github.io/demos/declarationist-demo.gif"
+                  target="_blank"
+                  data-track-click="demo:the-declarationist"
+                >
+                  Preview Demo
+                </a>
               </div>
-
-              <!--											<a href="#" class="special">Learn more</a>-->
-            </article>
-          </section>
-          <ul class="actions">
-            <!--										<li><a href="#" class="button">Browse All</a></li>-->
-          </ul>
+              </article>
+            </section>
+            <button
+              class="project-carousel-control project-carousel-control-next"
+              type="button"
+              aria-label="Next projects"
+              aria-controls="project-carousel"
+            ></button>
+          </div>
         </div>
       </section>
 
+      <!-- Skills -->
+      <section id="skills" class="wrapper spotlight style4">
+        <div class="inner">
+          <div class="content">
+            <h2 class="major">Skills</h2>
+            <div class="skills-grid">
+              <div class="skill-line">
+                <strong>Languages</strong>
+                <span>Python, JavaScript, PHP, SQL, C++, C, HTML/CSS</span>
+              </div>
+              <div class="skill-line">
+                <strong>Backend</strong>
+                <span>Django, FastAPI, Flask, REST APIs, Node.js, Express</span>
+              </div>
+              <div class="skill-line">
+                <strong>Databases</strong>
+                <span>PostgreSQL, MariaDB, SQLite, Qdrant, relational and vector databases</span>
+              </div>
+              <div class="skill-line">
+                <strong>AI & ML</strong>
+                <span>LangChain, LangGraph, Hugging Face, TensorFlow, RAG, RAGAS, LLM APIs</span>
+              </div>
+              <div class="skill-line">
+                <strong>Frontend & UI</strong>
+                <span>React, Redux, Vite, Streamlit, Jinja2, responsive UI</span>
+              </div>
+              <div class="skill-line">
+                <strong>Infrastructure & Tools</strong>
+                <span>Git, GitHub, Linux, Docker, AWS S3, Firebase, DDEV, cPanel</span>
+              </div>
+              <div class="skill-line">
+                <strong>Knowledge</strong>
+                <span>Agile Development, Neural Networks (CNNs, RNNs), Operating Systems, System Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
 
-    <!-- Footer -->
-    <section id="footer">
+    <!-- Contact -->
+    <section id="contact">
       <div class="inner">
         <h2 class="major">Get in touch</h2>
         <p style="text-align: center; font-size: 1.5em;">"Simple is better than complex. Complex is better than
-          complicated."</span><span style="font-style: italic; font-size: 0.9em;">– The Zen of Python</span></p>
-        <!--							<form method="post" action="#">-->
-        <!--								<div class="fields">-->
-        <!--									<div class="field">-->
-        <!--										<label for="name">Name</label>-->
-        <!--										<input type="text" name="name" id="name" />-->
-        <!--									</div>-->
-        <!--									<div class="field">-->
-        <!--										<label for="email">Email</label>-->
-        <!--										<input type="email" name="email" id="email" />-->
-        <!--									</div>-->
-        <!--									<div class="field">-->
-        <!--										<label for="message">Message</label>-->
-        <!--										<textarea name="message" id="message" rows="4"></textarea>-->
-        <!--									</div>-->
-        <!--								</div>-->
-        <!--								<ul class="actions">-->
-        <!--									<li><input type="submit" value="Send Message" /></li>-->
-        <!--								</ul>-->
-        <!--							</form>-->
-        <ul class="contact">
-          <li class="icon solid fa-home">
-            Parsippany, NJ 07054
-            <!--									<br />-->
-            <!--									1234 Somewhere Road Suite #2894<br />-->
-            <!--									Nashville, TN 00000-0000-->
+          complicated."
+          <span style="font-style: italic; font-size: 0.9em;">– The Zen of Python</span>
+        </p>
+        <ul class="contact-elements">
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 512 512" focusable="false">
+                <use href="app/icons.svg#icon-home"></use>
+              </svg>
+            </span>
+            <span>Parsippany, NJ</span>
           </li>
-          <!--								<li class="icon solid fa-phone">(000) 000-0000</li>-->
-          <li class="icon solid fa-envelope"><a href="mailto:djdinnebeil@gmail.com">djdinnebeil@gmail.com</a></li>
-          <li class="icon brands fa-github"><a href="https://github.com/djdinnebeil" target="_blank"><span
-              class="label">GitHub</span></a></li>
-
-          <li class="icon brands fa-linkedin-in"><a href="https://www.linkedin.com/in/dj-dinnebeil"
-                                                    target="_blank"><span class="label">LinkedIn</span></a></li>
-
-          <!--								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>-->
-          <!--								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>-->
-          <!--								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>-->
-        </ul>
-
-        <ul class="copyright">
-          <li>&copy; 2025 DJ Dinnebeil. All rights reserved.</li>
-          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 512 512" focusable="false">
+                <use href="app/icons.svg#icon-envelope"></use>
+              </svg>
+            </span>
+            <span
+              id="email-link"
+              class="email-reveal email-placeholder"
+              aria-live="polite"
+              aria-label="Email address loading"
+            >
+              Email DJ
+            </span>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 512 512" focusable="false">
+                <use href="app/icons.svg#icon-github"></use>
+              </svg>
+            </span>
+            <a href="https://github.com/djdinnebeil" target="_blank" data-track-click="contact:github">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 448 512" focusable="false">
+                <use href="app/icons.svg#icon-linkedin"></use>
+              </svg>
+            </span>
+            <a href="https://www.linkedin.com/in/dj-dinnebeil" target="_blank" data-track-click="contact:linkedin">
+              LinkedIn
+            </a>
+          </li>
         </ul>
       </div>
     </section>
-
   </div>
-
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-
 </body>
 </html>
