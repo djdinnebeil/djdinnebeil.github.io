@@ -1935,7 +1935,6 @@ ul.contact-elements li {
 .email-reveal,
 .email-reveal:visited {
   display: inline-block;
-  min-width: 8.5rem;
   transition:
     opacity 0.2s ease,
     transform 0.2s ease;
