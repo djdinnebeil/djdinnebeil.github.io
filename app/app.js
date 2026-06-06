@@ -78,7 +78,7 @@
     payload.set("title", document.title);
     payload.set("referrer", document.referrer);
 
-    const trackingUrl = "https://djdinn.dev/track/";
+    const trackingUrl = "https://djdinn.dev/track-github/";
 
     const sentWithBeacon =
       navigator.sendBeacon &&
